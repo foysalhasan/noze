@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./node_modules/aos/dist/aos.css" rel="stylesheet" />
+    <link href="./output/tailwind.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header
+      class="fixed z-30 top-0 left-0 mx-auto w-full max-w-full px-16 py-2 flex justify-between items-center bg-white shadow-sm border-primary/25 border-b"
+    >
+      <!-- HEADER LEFT -->
+      <div class="space-x-4 flex items-center">
+        <!-- HEADER LOGO -->
+        <img src="./src/assests/logo.svg" alt="Logo" class="w-full shrink-1 mr-4" />
+        <!-- HEADER NAVIGATION -->
+        <nav class="flex justify-center items-center gap-x-7 text-[15px] text-primary/50 font-medium">
+          <a class="text-primary font-normal" href="#">Overview</a>
+          <a href="#">Specs</a>
+          <a href="#">FAQs</a>
+        </nav>
+      </div>
+      <!-- HEADER RIGHT -->
+      <div class="flex items-center justify-center gap-x-1">
+        <span class="text-primary capitalize text-lg mr-5">order for $249</span>
+        <button class="bg-primary/90 px-8 py-3 rounded text-white font-semibold capitalize transition hover:bg-primary">pre order</button>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="2xl:max-w-[1320px] mx-auto grid lg:grid-cols-2 pt-24 pb-24">
+      <div class="pt-28">
+        <h1 class="text-6xl font-medium text-dark">
+          There's something <br />
+          new in the air
+        </h1>
+        <p class="my-10 text-gray-500 text-lg">NOZE is an AI powered air quality monitor that works to keep you safe. Breathe easy.</p>
+        <button class="bg-primary/90 px-6 py-4 rounded text-white font-medium text-sm capitalize transition hover:bg-primary">Join the waitlist</button>
+      </div>
+      <div class="text-right" data-aos="fade-up">
+        <img src="/src/assests/NOZE-Hero-1.png" alt="Hero" class="inline-block" />
+      </div>
+    </section>
+    <!-- HEADLINE SECTION -->
+    <section class="bg-gray-200/80">
+      <div class="2xl:max-w-[1320px] mx-auto py-20">
+        <h2 class="text-6xl text-dark font-medium">
+          NOZE is making <br />
+          headlines.
+        </h2>
+      </div>
+    </section>
+    <!-- ORDINARY SECTION -->
+    <section class="py-20">
+      <div class="max-w-full px-28 mx-auto grid grid-cols-2 items-center">
+        <div class="">
+          <h2 class="text-dark font-medium text-6xl" data-aos="fade-up">Anything but <br />ordinary.</h2>
+          <p class="text-dark text-lg my-8" data-aos="fade-up">Some would say it's out of this world. That’s not far off.</p>
+          <div
+            class="relative before:content[''] before:top-0 before:-left-10 before:absolute before:w-[2px] before:h-full before:bg-purple-700 mb-5"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
+            <h3 class="mb-5"><span class="text-dark font-bold text-xl">NASA INSPIRED</span></h3>
+            <p class="text-lg text-dark/70 font-medium max-w-2xl">
+              NOZE is powered by a single sensor built on years of NASA innovation. Our technology raises the bar to new heights by using the digital sense of
+              smell to keep track of the air you’re breathing.
+            </p>
+          </div>
+          <div class="relative before:content[''] before:top-0 before:-left-10 before:absolute before:w-[2px] before:h-full before:bg-gray-500">
+            <h3 class="mb-5"><span class="text-dark font-bold text-xl">ENGINEERED TO THINK</span></h3>
+          </div>
+        </div>
+
+        <div class="rounded-full overflow-hidden w-[550px] h-[550px]" data-aos="fade-up">
+          <img src="/src/assests/about2.gif" alt="about" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+    <!-- CONQUARE SECTION -->
+    <section class="py-20">
+      <div class="max-w-full px-28 mx-auto grid grid-cols-2 items-center">
+        <div class="">
+          <video src="./src/assests/NOZEabout1.mp4" muted autoplay loop></video>
+        </div>
+        <div class="px-12" data-aos="fade-up">
+          <h2 class="text-dark font-medium text-6xl">Сonquer the Virus</h2>
+          <p class="text-primary/90 text-lg my-8">
+            Noze tracks the airborne markers (VOCs) associated with the Coronavirus family. Our AI uses that information to deliver a real-time risk index that
+            will not only tell you if your space is prone to spreading the virus, but whether there’s a chance the virus is actually in the air.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- BREAK THE MOOD SECTION -->
+    <section class="py-20">
+      <div class="max-w-full px-8 mx-auto grid grid-cols-2 items-center">
+        <div class="px-12">
+          <h2 data-aos="fade-up" class="text-dark font-medium text-6xl">Break the Mold</h2>
+          <p class="text-primary/90 text-lg my-8">
+            NOZE monitors the air for spores and other markers associated with the most common types of indoor mold. Our mold index will tell you if it's likely
+            that there’s mold around and whether your space is in danger of being a breeding ground.
+          </p>
+        </div>
+        <div class="">
+          <video src="./src/assests/NOZEabout2.mp4" muted autoplay loop></video>
+        </div>
+      </div>
+    </section>
+    <!-- WHAT YOU CAN'T SEE SECTION -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="space-y-3 text-center" data-aos="fade-up">
+          <h2 class="text-dark font-medium text-6xl mb-10">What you can't see matters.</h2>
+          <p class="text-primary/90 text-lg max-w-xl mx-auto">
+            NOZE also monitors a range of other pollutants to help make indoor spaces safer places to live, work, and visit.
+          </p>
+        </div>
+        <div class="grid grid-cols-12 mt-20 items-center">
+          <div class="col-span-4">
+            <div class="space-y-4 list-none text-violet-300 font-medium text-xl">
+              <li class="text-dark font-medium cursor-pointer">Carbon Di-oxide</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Formaldehyde</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Butanal</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Particulate Matter</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Ethanol</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Tobacco Odour</li>
+              <li class="cursor-pointer font-medium hover:text-dark">Humidity</li>
+            </div>
+          </div>
+          <div class="col-span-8">
+            <div class="relative w-[950px] min-h-[570px] rounded-[1000px] overflow-hidden">
+              <div class="inset-0 absolute flex items-center justify-center text-white">
+                <div class="max-w-2xl h-full relative text-center mx-auto flex items-center justify-between py-24 flex-col">
+                  <h3 class="text-5xl leading-[1.2]">Clouds our thinking, lowers productivity & affects our sleep.</h3>
+                  <p class="text-lg">Exhaled breath from people & pets and open flames are the most common sources.</p>
+                </div>
+              </div>
+              <img src="./src/assests/matters1.png" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S MORE -->
+    <section class="py-20">
+      <div class="container mx-auto">
+        <div class="space-y-3 text-center max-w-4xl mx-auto" data-aos="fade-up">
+          <h2 class="text-dark font-medium text-6xl mb-10">What's more important, form or function?</h2>
+          <p class="text-primary/90 text-lg max-w-xl mx-auto">We didn’t think it was fair to have to choose.</p>
+        </div>
+        <div class="mt-10">
+          <video src="./src/assests/WALP.mp4" muted autoplay></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- POWER SECTION -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-4">
+            <h2 class="text-dark font-medium text-6xl mb-10" data-aos="fade-up">Incredible power, right under your NOZE</h2>
+          </div>
+          <div class="col-span-8 pl-10">
+            <div class="w-[450px]" data-aos="fade-up">
+              <div class="w-[450px] overflow-hidden bg-gray-200 p-10 rounded-full mb-12">
+                <img src="src/assests/6.png" class="inline-block object-cover" alt="" />
+              </div>
+              <div class="text-center">
+                <h4 class="text-xl text-dark font-semibold">Check in.</h4>
+                <p class="text-dark/60 text-lg px-20">Keep an eye on things in real-time so you can have peace of mind all the time.</p>
+              </div>
+            </div>
+            <div class="w-[450px] ml-auto" data-aos="fade-up" data-aos-delay="500">
+              <div class="w-[450px] overflow-hidden bg-gray-200 p-10 rounded-full mb-12">
+                <img src="src/assests/8.png" class="inline-block object-cover" alt="" />
+              </div>
+              <div class="text-center">
+                <h4 class="text-xl text-dark font-semibold">Track it.</h4>
+                <p class="text-dark/60 text-lg px-20">Dive into the details to understand exactly what’s going on so you can take action in the moment.</p>
+              </div>
+            </div>
+            <div class="w-[450px]" data-aos="fade-up" data-aos-delay="1000">
+              <div class="w-[450px] overflow-hidden bg-gray-200 p-10 rounded-full mb-12">
+                <img src="src/assests/9.png" class="inline-block object-cover" alt="" />
+              </div>
+              <div class="text-center">
+                <h4 class="text-xl text-dark font-semibold">Share it.</h4>
+                <p class="text-dark/60 text-lg px-20">Let others see what’s in the air before they come inside by sharing access to your Noze.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET NOZE SECTION -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-12">
+          <div class="col-span-7" data-aos="fade-up">
+            <div class="rounded-full w-[550px] h-[550px] overflow-hidden bg-red-600">
+              <img src="./src/assests/06-1-copy.png" alt="img" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="col-span-5" data-aos="fade-up">
+            <h2 class="text-dark font-medium text-6xl mb-3">Wondering if you should get a NOZE?</h2>
+            <p class="text-dark text-lg max-w-xl mx-auto">Any way you slice it, it’s a no brainer.</p>
+            <ul class="list-none space-y-3 text-lg text-gray-800 mt-10">
+              <li>1. Reduce Virus spread</li>
+              <li>2. Watch out for Mold</li>
+              <li>3. Keep Asthma in check</li>
+              <li>4. Avoid Allergy flare ups</li>
+              <li>5. Improve your Sleep</li>
+              <li>6. Boost Productivity & Focus FAQs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-dark text-center font-medium text-6xl mb-10" data-aos="fade-up">FAQs</h2>
+        <div class="bg-white mb-5 shadow border border-primary/50 p-4 transition hover:shadow-2xl rounded-3xl overflow-hidden cursor-pointer">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">How is NOZE different from other air quality monitors?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white mb-5 shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">What is a digital nose?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white mb-5 shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">What is the Virus Risk Index ?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer mb-5">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">How does the Virus Risk Index work?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer mb-5">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">What space can it cover ?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer mb-5">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">How many NOZE devices do I need ?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+        <div class="bg-white shadow border border-primary/50 p-4 transition hover:shadow-2xl max-h-16 rounded-3xl overflow-hidden cursor-pointer">
+          <div class="flex justify-between items-center">
+            <h3 class="text-gray-900 font-medium text-xl px-4">What is the Warranty on NOZE ?</h3>
+            <span class="text-4xl text-gray-500 block">+</span>
+          </div>
+          <p class="mt-12 text-lg text-gray-700">
+            The technology behind NOZE is based on a digital nose sensor (also known as an e-nose). With this sensor, NOZE can precisely detect a wide range of
+            pollutants and chemicals. In contrast, almost all other air quality monitors on the market today use a bundle of off-the-shelf sensors that are
+            limited in what they can detect and can vary widely in quality, accuracy and reliability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAY CONNECTED SECTION -->
+    <section class="py-40">
+      <div class="container mx-auto">
+        <div class="text-center" data-aos="fade-up">
+          <h2 class="text-dark font-medium text-6xl mb-3">Stay connected with NOZE</h2>
+          <p class="text-gray text-lg max-w-sm mx-auto">NOZE is an AI powered air quality monitor that works to keep you safe. Breathe easy.</p>
+          <button class="bg-primary/90 px-6 py-4 mt-7 rounded text-white font-medium text-sm capitalize transition hover:bg-primary">Join the waitlist</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-gray-100">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex flex-shrink gap-x-8 items-center justify-between">
+            <a href="#">
+              <img src="./src/assests/fb.svg" alt="fb" />
+            </a>
+            <a href="#">
+              <img src="./src/assests/twitter.svg" alt="fb" />
+            </a>
+            <a href="#">
+              <img src="./src/assests/ig.svg" alt="fb" />
+            </a>
+          </div>
+          <div class="text-center">2021 NOZE</div>
+          <div class="flex justify-between gap-x-6 text-sm">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
+</html>
